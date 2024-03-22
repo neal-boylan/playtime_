@@ -1,6 +1,6 @@
 {
   "name": "playtime",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Playtime: a Hapi/node application for managing Playlists",
   "main": "src/server.js",
   "type": "module",
@@ -23,6 +23,8 @@
     "@hapi/vision": "^7.0.3",
     "dotenv": "^16.4.5",
     "handlebars": "^4.7.8",
+    "joi": "^17.12.2",
+    "lowdb": "^7.0.1",
     "uuid": "^9.0.1"
   }
 }

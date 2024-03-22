@@ -1,6 +1,7 @@
 import Hapi from "@hapi/hapi";
 import Vision from "@hapi/vision";
 import Handlebars from "handlebars";
+import Joi from "joi";
 import path from "path";
 import { fileURLToPath } from "url";
 import Cookie from "@hapi/cookie";
@@ -25,6 +26,7 @@ async function init() {
   });
   await server.register(Vision);
   await server.register(Cookie);
+  server.validator(Joi);
 
   server.auth.strategy("session", "cookie", {
     cookie: {
