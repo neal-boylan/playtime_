@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "a",
+      "_id": "e8e536e8-7feb-4714-b35d-a012dd98c965"
+    }
+  ],
+  "playlists": [
+    {
+      "userid": "e8e536e8-7feb-4714-b35d-a012dd98c965",
+      "title": "Rock",
+      "_id": "f12a7915-b863-460b-b95c-38e6d1bc6aed"
+    }
+  ],
+  "tracks": []
+}
