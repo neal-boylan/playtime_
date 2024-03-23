@@ -5,36 +5,50 @@
       "lastName": "Simpson",
       "email": "homer@simpson.com",
       "password": "secret",
-      "_id": "fa9f7021-b655-4e05-b4ff-1043d4111a7b"
+      "_id": "3f131daf-6325-40c9-92c0-07fb51f77e60"
     },
     {
       "firstName": "Marge",
       "lastName": "Simpson",
       "email": "marge@simpson.com",
       "password": "secret",
-      "_id": "a4b5c473-1f64-4b89-9364-3e1072c75a21"
+      "_id": "693d8272-86e9-467a-b661-6add361cdc94"
     },
     {
       "firstName": "Bart",
       "lastName": "Simpson",
       "email": "bart@simpson.com",
       "password": "secret",
-      "_id": "3a303b14-4df5-442e-9021-97e817085d64"
+      "_id": "97c9dedd-a669-4fa2-8480-5b5a96172930"
     }
   ],
   "playlists": [
     {
-      "title": "Beethoven Sonatas",
-      "_id": "b3cb81d8-eb3e-449f-83b2-22933abce051"
-    },
-    {
-      "title": "Beethoven Concertos",
-      "_id": "30d44b85-8ea2-4e4e-9aa0-4a90ff7457ee"
-    },
-    {
-      "title": "Beethoven Symphonies",
-      "_id": "8147948b-e833-443f-8ade-f4427725e2a8"
+      "title": "Mozart Favourites",
+      "_id": "d034ef39-5c76-4f5a-b1de-c17bfa4eb3c0"
     }
   ],
-  "tracks": []
+  "tracks": [
+    {
+      "title": "Piano Sonata No. 3",
+      "artist": "Beethoven",
+      "duration": 5,
+      "_id": "b5492f02-2acc-42fd-8a22-76997164f74c",
+      "playlistid": "d034ef39-5c76-4f5a-b1de-c17bfa4eb3c0"
+    },
+    {
+      "title": "Piano Sonata No. 7",
+      "artist": "Beethoven",
+      "duration": 6,
+      "_id": "7d3aa789-0db4-4574-94ed-70fa4f72224f",
+      "playlistid": "d034ef39-5c76-4f5a-b1de-c17bfa4eb3c0"
+    },
+    {
+      "title": "Piano Sonata No. 10",
+      "artist": "Beethoven",
+      "duration": 4,
+      "_id": "d81b91fe-083b-422b-a342-fc8d428d3456",
+      "playlistid": "d034ef39-5c76-4f5a-b1de-c17bfa4eb3c0"
+    }
+  ]
 }
