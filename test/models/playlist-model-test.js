@@ -1,8 +1,8 @@
 import { assert } from "chai";
 import { EventEmitter } from "events";
-import { db } from "../src/models/db.js";
-import { assertSubset } from "./test-utils.js";
-import { testPlaylists, mozart } from "./fixtures.js";
+import { db } from "../../src/models/db.js";
+import { assertSubset } from "../test-utils.js";
+import { testPlaylists, mozart } from "../fixtures.js";
 
 EventEmitter.setMaxListeners(25);
 
@@ -15,6 +15,9 @@ suite("Playlist Model tests", () => {
       // eslint-disable-next-line no-await-in-loop
       testPlaylists[i] = await db.playlistStore.addPlaylist(testPlaylists[i]);
     }
+  });
+
+  teardown(async () => {
   });
 
   test("create a playlist", async () => {

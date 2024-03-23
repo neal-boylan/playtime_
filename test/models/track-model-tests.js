@@ -1,7 +1,7 @@
 import { assert } from "chai";
-import { db } from "../src/models/db.js";
-import { testPlaylists, testTracks, beethoven, mozart, concerto, testUsers } from "./fixtures.js";
-import { assertSubset } from "./test-utils.js";
+import { db } from "../../src/models/db.js";
+import { testPlaylists, testTracks, beethoven, mozart, concerto, testUsers } from "../fixtures.js";
+import { assertSubset } from "../test-utils.js";
 
 suite("Track Model tests", () => {
 
@@ -16,6 +16,9 @@ suite("Track Model tests", () => {
       // eslint-disable-next-line no-await-in-loop
       testTracks[i] = await db.trackStore.addTrack(beethovenList._id, testTracks[i]);
     }
+  });
+
+  teardown(async () => {
   });
 
   test("create single track", async () => {

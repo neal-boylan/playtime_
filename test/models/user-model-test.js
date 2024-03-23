@@ -1,7 +1,7 @@
 import { assert } from "chai";
-import { db } from "../src/models/db.js";
-import { assertSubset } from "./test-utils.js";
-import { maggie, testUsers } from "./fixtures.js";
+import { db } from "../../src/models/db.js";
+import { assertSubset } from "../test-utils.js";
+import { maggie, testUsers } from "../fixtures.js";
 
 suite("User tests", () => {
 
@@ -12,6 +12,9 @@ suite("User tests", () => {
       // eslint-disable-next-line no-await-in-loop
       testUsers[i] = await db.userStore.addUser(testUsers[i]);
     }
+  });
+
+  teardown(async () => {
   });
 
   test("create a user", async () => {
