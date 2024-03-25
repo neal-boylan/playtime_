@@ -9,7 +9,7 @@ EventEmitter.setMaxListeners(25);
 suite("Playlist Model tests", () => {
 
   setup(async () => {
-    db.init("json");
+    db.init("mongo");
     await db.playlistStore.deleteAllPlaylists();
     for (let i = 0; i < testPlaylists.length; i += 1) {
       // eslint-disable-next-line no-await-in-loop
@@ -18,6 +18,7 @@ suite("Playlist Model tests", () => {
   });
 
   teardown(async () => {
+    await db.playlistStore.deleteAllPlaylists();
   });
 
   test("create a playlist", async () => {

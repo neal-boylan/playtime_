@@ -6,7 +6,7 @@ import { maggie, testUsers } from "../fixtures.js";
 suite("User tests", () => {
 
   setup(async () => {
-    db.init("json");
+    db.init("mongo");
     await db.userStore.deleteAll();
     for (let i = 0; i < testUsers.length; i += 1) {
       // eslint-disable-next-line no-await-in-loop
@@ -15,6 +15,7 @@ suite("User tests", () => {
   });
 
   teardown(async () => {
+    await db.userStore.deleteAll();
   });
 
   test("create a user", async () => {

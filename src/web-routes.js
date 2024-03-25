@@ -20,4 +20,6 @@ export const webRoutes = [
   { method: "GET", path: "/playlist/{id}/deletetrack/{trackid}", config: playlistController.deleteTrack },
 
 	{ method: "GET", path: "/about", config: aboutController.index },
+
+  { method: "GET", path: "/{param*}", handler: { directory: { path: "./public" } }, options: { auth: false } }
 ];
