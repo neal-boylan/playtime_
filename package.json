@@ -1,6 +1,6 @@
 {
   "name": "playtime",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Playtime: a Hapi/node application for managing Playlists",
   "main": "src/server.js",
   "type": "module",
@@ -28,6 +28,7 @@
     "@hapi/hapi": "^21.3.2",
     "@hapi/inert": "^7.1.0",
     "@hapi/vision": "^7.0.3",
+    "cloudinary": "^2.1.0",
     "dotenv": "^16.4.5",
     "handlebars": "^4.7.8",
     "hapi-auth-jwt2": "^10.5.1",
